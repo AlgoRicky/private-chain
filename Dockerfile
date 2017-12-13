@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
     apt install wget -y && \
+    apt-get install net-tools -y && \
     cd /tmp && \
     wget "$GETH_URL" -q -O /tmp/geth-alltools-linux-amd64.tar.gz && \
     echo "$GETH_MD5  geth-alltools-linux-amd64.tar.gz" > /tmp/geth-alltools-linux-amd64.tar.gz.md5 && \
