@@ -1,0 +1,2 @@
+sudo ./build.sh
+sudo ./startall.sh 
